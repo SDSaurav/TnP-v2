@@ -1,0 +1,7 @@
+.mainPage{
+  height: 750px;
+  background: linear-gradient(to right, black, 50%, teal );;
+}
+.mainHeading{
+  padding-top: 25px;
+}
