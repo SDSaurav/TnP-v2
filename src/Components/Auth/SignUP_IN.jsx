@@ -77,46 +77,44 @@ class SignUPIN extends Component {
 
     render() {
         return (
-            <div>
                 <div className="container">
-                    {this.state.LogIn ? (<div className="row">
+                    {this.state.LogIn ? (<div className="login"><div className="row">
                         <div className="col s12 m6 l6 offset-l3 offset-m3">
                             <div className="card z-depth-2">
                                 <form onSubmit={this.onAdd}>
-                                    <div className="card-content orange lighten-5">
-                                        <div className="card-title z-depth-1 center orange darken-4 white-text">{this.state.Status} Sign In</div>
+                                    <div className="card-content white lighten-5">
+                                        <div className="card-title z-depth-1 center teal darken-4 white-text">{this.state.Status} Sign In</div>
                                         <br />
-                                        <InputS n="UserEmail" v={this.state.UserEmail} t="text" oc={this.whenChange} f="lemail" e={this.props.lemail} m={this.props.lmess} d="lemail" l="Email" />
+                                        <InputS n="UserEmail" v={this.state.UserEmail} t="text" oc={this.whenChange} f="email" e={this.props.lemail} m={this.props.lmess} d="email" l="Email" />
                                         <InputS n="UserPass" v={this.state.UserPass} t="password" oc={this.whenChange} f="pass" p={this.props.lpass} m={this.props.lmess} d="pass" l='Password' />
                                     </div>
-                                    <div className="card-action orange lighten-5">
-                                        <Button cn="btn form_bu waves-effect waves-light orange darken-3" t="Sign in" />
-                                        {this.state.Status === "Admin" ? (null) : (<Fragment> <span className="grey-text darken-1">Don't have an account?</span>  &nbsp; <An cn="orange-text text-darken-2 form_a text" t="Sign up" oc={this.whenClick} /> </Fragment>)}
+                                    <div className="card-action teal darken-4">
+                                        <Button cn="btn form_bu waves-effect waves-light teal darken-3" t="Sign in" />
+                                        {this.state.Status === "Admin" ? (null) : (<Fragment> <span className="grey-text darken-1">Don't have an account?</span>  &nbsp; <An cn="white-text text-darken-2 form_a text" t="Sign up" oc={this.whenClick} /> </Fragment>)}
                                     </div>
                                 </form>
                             </div>
                         </div>
-                    </div>) : (null)}
-                    {this.state.SignUp ? (<div className="row">
+                    </div></div>) : (null)}
+                    {this.state.SignUp ? (<div className="SignUp"><div className="row">
                         <div className="col s12 m6 l6 offset-l3 offset-m3">
                             <div className="card z-depth-2">
                                 <form onSubmit={this.onAdd}>
-                                    <div className="card-content orange lighten-5">
-                                        <div className="card-title z-depth-1 center orange darken-4 white-text">{this.state.Status} Sign Up</div>
+                                    <div className="card-content white lighten-5">
+                                        <div className="card-title z-depth-1 center teal darken-4 white-text">{this.state.Status} Sign Up</div>
                                         <br />
                                         <InputS n="UserEmail" v={this.state.UserEmail} t="text" oc={this.whenChange} f="semail" e={this.props.semail} m={this.props.smess} d="semail" l="Email" />
                                         <InputS n="UserPass" v={this.state.UserPass} t="password" oc={this.whenChange} f="pass" p={this.props.spass} m={this.props.smess} d="pass" l='Password' />
                                     </div>
-                                    <div className="card-action orange lighten-5">
-                                        <Button cn="btn form_bu waves-effect waves-light orange darken-3" t="Sign up" />
-                                        <span className="grey-text darken-1">Already have an account?</span> &nbsp; <An cn="orange-text text-darken-2 form_a text" t="Sign in" oc={this.WhenClick} />
+                                    <div className="card-action teal darken-4">
+                                        <Button cn="btn form_bu waves-effect waves-light teal darken-4" t="Sign up" />
+                                        <span className="grey-text darken-1">Already have an account?</span> &nbsp; <An cn="white-text text-darken-2 form_a text" t="Sign in" oc={this.WhenClick} />
                                     </div>
                                 </form>
                             </div>
                         </div>
-                    </div>) : (null)}
+                    </div></div>) : (null)}
                 </div>
-            </div>
         )
     }
 }

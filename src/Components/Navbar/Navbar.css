@@ -1,1 +1,8 @@
-.list_width{width: 250px;}
+.list_width{
+    width: 250px;
+    background: linear-gradient(to right, black, 50%, teal );
+}
+.total{
+    width: 100%;
+    background: linear-gradient(to right, black, 50%, teal );
+}

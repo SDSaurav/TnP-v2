@@ -1,5 +1,6 @@
 .form_bu{
     margin: 3% 0 3% 0;
+    background: linear-gradient(to left, black, 50%, teal );
 }
 .form_a{
     cursor: pointer;

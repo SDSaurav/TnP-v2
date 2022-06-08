@@ -20,14 +20,14 @@ const CDetails = (props) => {
                         <div className="card-image">
                             <img src={DefaultPicC} alt="user-profile" className="pImage" />
                             {props.Status === "Admin" ? (props.isUserBlocked ? (
-                            <span className="btn-floating halfway-fab waves-effect waves-light orange lighten-2" onClick={() => { props.unBlockC(currentCompany.companyID,currentCompany.userId, props.BlockedUser.key)}}>
-                            <i className="material-icons">how_to_reg</i></span>) : (<span className="btn-floating halfway-fab waves-effect waves-light orange lighten-2" onClick={() => { props.blockC(currentCompany.companyID, currentCompany.userId)}}><i className="material-icons">block</i></span>)) : (null)}
+                            <span className="btn-floating halfway-fab waves-effect waves-light teal darken-4" onClick={() => { props.unBlockC(currentCompany.companyID,currentCompany.userId, props.BlockedUser.key)}}>
+                            <i className="material-icons">how_to_reg</i></span>) : (<span className="btn-floating halfway-fab waves-effect waves-light teal darken-4" onClick={() => { props.blockC(currentCompany.companyID, currentCompany.userId)}}><i className="material-icons">block</i></span>)) : (null)}
                         </div>
                         <div className="card-content">
-                            <div className="card-title orange-text">
+                            <div className="card-title teal-text">
                                <h5 className="hide-on-small-only"> COMPANY'S INFORMATION </h5>
                             </div>
-                            <div className="card-title orange-text">
+                            <div className="card-title teal-text">
                                <h6 className="hide-on-med-and-up"> COMPANY'S INFORMATION </h6>
                             </div>
                             <table>

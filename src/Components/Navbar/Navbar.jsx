@@ -28,59 +28,59 @@ class Navbar extends Component {
   render() {
     const sideList = (
       <div className="list_width">
-        <ul className="collection with-header">
-          <li className="collection-header orange darken-3">
+        <ul className="collection with-header teal lighten-5">
+          <li className="collection-header teal lighten-5">
             <h6 className="white-text">
               {this.props.User ? (this.props.User.email) : (null)}
             </h6>
           </li>
           {this.props.status === "Admin" ? (<li className="collection-item">
-            <NavLink to="/" className="orange-text">Requests</NavLink>
+            <NavLink to="/" className="white-text">Requests</NavLink>
           </li>) : (null)}
           {this.props.status === "Company" ? (<li className="collection-item">
-            <NavLink to="/" className="orange-text">Students</NavLink>
+            <NavLink to="/" className="white-text">Students</NavLink>
           </li>) : (null)}
           {this.props.status === "Student" ? (<li className="collection-item">
-            <NavLink to="/" className="orange-text">Vacancies</NavLink>
+            <NavLink to="/" className="white-text">Vacancies</NavLink>
           </li>) : (null)}
           {this.props.status === "Admin" ? (<li className="collection-item">
-            <NavLink to="/Students" className="orange-text">Students</NavLink>
+            <NavLink to="/Students" className="white-text">Students</NavLink>
           </li>) : (null)}
           {this.props.status === "Admin" ? (<li className="collection-item">
-            <NavLink to="/Vacancies" className="orange-text">Vacancies</NavLink>
+            <NavLink to="/Vacancies" className="white-text">Vacancies</NavLink>
           </li>) : (null)}
           {this.props.status === "Admin" || this.props.status === "Student" ? (<li className="collection-item">
-            <NavLink to="/Companies" className="orange-text">Companies</NavLink>
+            <NavLink to="/Companies" className="white-text">Companies</NavLink>
           </li>) : (null)}
           {this.props.status === "Company" ? (<li className="collection-item">
-            <NavLink to="/PostVacancy" className="orange-text">Post New Vacancy</NavLink>
+            <NavLink to="/PostVacancy" className="white-text">Post New Vacancy</NavLink>
           </li>) : (null)}
           {this.props.status === "Company" || this.props.status === "Student" ? (<li className="collection-item">
-            <NavLink to="/Profile" className="orange-text">Profile</NavLink>
+            <NavLink to="/Profile" className="white-text">Profile</NavLink>
           </li>) : (null)}
           <li className="collection-item">
-            <NavLink to="/SignOut" className="orange-text">Sign Out</NavLink>
+            <NavLink to="/SignOut" className="white-text">Sign Out</NavLink>
           </li>
         </ul>
       </div>
     );
     return (
       <div>
-        {this.props.User ? (<Fragment><nav className="nav-wrapper orange darken-4">
-          <div className="container">
+        {this.props.User ? (<Fragment><nav className="nav-wrapper teal darken-4">
+          <div className="container teal darken-4 ">
             <span onClick={this.toggleDrawer(true)} className="btn-small btn-floating transparent hide-on-large-only">
               <i className="material-icons">menu</i>
             </span>
             &nbsp;
             &nbsp;
             &nbsp;
-        <span className="flow-text orange darken-4 hide-on-large-only">Campus Recruitment System</span>
+        <span className="flow-text teal darken-4  hide-on-large-only">Training And Placement</span>
             <Drawer open={this.state.left} onClose={this.toggleDrawer(false)}>
               <div onClick={this.toggleDrawer(false)}>
                 {sideList}
               </div>
             </Drawer>
-            <span className="brand-logo hide-on-med-and-down">Campus Recruitment System</span>
+            <span className="brand-logo hide-on-med-and-down teal darken-4 ">Training And Placement</span>
             <ul className="right hide-on-med-and-down">
               <SignInLinks email={this.props.User.email} />
             </ul>

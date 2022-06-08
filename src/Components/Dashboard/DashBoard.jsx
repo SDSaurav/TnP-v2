@@ -24,12 +24,12 @@ class DashBoard extends Component {
                     <br />
                     <br />
                     <br />
-                    <div className="#90a4ae blue-grey lighten-2 container white border border-dark d-inline-flex p-2">
-                        <h2 className="#90a4ae blue-grey lighten-2 center mainHeading hide-on-med-and-down">
-                            Welcome to Campus Recruitment System
+                    <div className="#ffffff white container white border border-dark d-inline-flex p-2">
+                        <h2 className="#ffffff white lighten-2 center mainHeading hide-on-med-and-down">
+                            Welcome to T&P Cell
                         </h2>
-                        <h6 className="orange-text text-darken-4 center mainHeading hide-on-large-only">
-                            Welcome to Campus Recruitment System
+                        <h6 className="black-text text-darken-4 center mainHeading hide-on-large-only">
+                            Welcome to T&P Cell
                         </h6>
                         <p className="center hide-on-med-and-down flow-text">Please select one, in order to SignUp/SignIn.</p>
                         <p className="center hide-on-large-only">Please select one, in order to SignUp/SignIn.</p>
@@ -44,7 +44,7 @@ class DashBoard extends Component {
                                         <h4>Company</h4>
 
                                     </li>
-                                    <li className="flow-text form_a orange-text text-lighten-1" onClick={() => {this.showS("Admin")}}>
+                                    <li className="flow-text form_a text-lighten-1" onClick={() => {this.showS("Admin")}}>
                                         <h4>Admin</h4>
                                     </li>
                                 </ul>
@@ -56,10 +56,10 @@ class DashBoard extends Component {
                 </div>) : (null)}
                 {this.state.signUp ? (
                 <Fragment>
-                    <nav className="nav-wrapper orange darken-4">
+                    <nav className="nav-wrapper teal darken-4">
                     <div className="container">
-                        <span className="brand-logo hide-on-small-only">Campus Recruitment System</span>
-                        <span className="hide-on-med-and-up">Campus Recruitment System</span>
+                        <span className="brand-logo hide-on-small-only">Training And Placement</span>
+                        <span className="hide-on-med-and-up">Training And Placement</span>
                     </div>
                 </nav>
                     <br/>

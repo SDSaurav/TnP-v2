@@ -5,7 +5,7 @@ const Vacancies = (props) => {
     return (<Fragment>
         <div className="container hide-on-small-only"> <br /> <br /> {props.user ? (props.status === "Admin" ? (props.allVacancies.length > 0 ? (<div className="row">
             <div className="col l12 s12 m12">
-                <table><thead className="orange darken-1 z-depth-1">
+                <table><thead className="teal darken-4 z-depth-1">
                     <tr className="white-text">
                         <th>S.No</th>
                         <th>Company Name</th>
@@ -40,10 +40,10 @@ const Vacancies = (props) => {
                 </table>
             </div>
         </div>) : (<div className="center">
-            <h5 className="orange-text text-darken-1">No Company has posted any vacancy yet!</h5>
+            <h5 className="white-text text-darken-1">No Company has posted any vacancy yet!</h5>
         </div>)) : (props.unBlockedVacanies.length > 0 ? (<div className="row">
             <div className="col l12 s12 m12">
-                <table><thead className="orange darken-1 z-depth-1">
+                <table><thead className="teal darken-4 z-depth-1">
                     <tr className="white-text">
                         <th>S.No</th>
                         <th>Company Name</th>
@@ -95,7 +95,7 @@ const Vacancies = (props) => {
         <div className="container hide-on-med-and-up"> <br /> <br /> {props.user ? (props.status === "Admin" ? (props.allVacancies.length > 0 ? (
         <div className="row">
             <div className="col l12 s12 m12">
-                <table className="smallFont"><thead className="orange darken-1 z-depth-1">
+                <table className="smallFont"><thead className="teal darken-4 z-depth-1">
                     <tr className="white-text">
                         <th colSpan="2" className="center">All Vacancies</th>
                     </tr>
@@ -133,10 +133,10 @@ const Vacancies = (props) => {
                 </table>
             </div>
         </div>) : (<div className="center">
-            <h6 className="orange-text text-darken-1">No, Company has posted any vacancy yet!</h6>
+            <h6 className="white-text text-darken-1">No, Company has posted any vacancy yet!</h6>
         </div>)) : (props.unBlockedVacanies.length > 0 ? (<div className="row">
             <div className="col l12 s12 m12">
-                <table className="smallFont"><thead className="orange darken-1 z-depth-1">
+                <table className="smallFont"><thead className="teal darken-4 z-depth-1">
                     <tr className="white-text">
                         <th colSpan="2" className="center">All Vacancies</th>
                     </tr>
@@ -166,7 +166,7 @@ const Vacancies = (props) => {
                                         <td>{v.ec}</td>
                                     </tr>
                                     <tr>
-                                        <th colSpan="2" className="orange lighten-4">
+                                        <th colSpan="2" className="teal darken-4">
                                             {/* <span className="waves-effect waves-light right btn-small orange darken-1" onClick={() => { }}>
                                                 Apply Now
                                             </span> */}
@@ -178,7 +178,7 @@ const Vacancies = (props) => {
                 </table>
             </div>
         </div>) : (<div className="center">
-            <h6 className="orange-text text-darken-1">No, Company has posted any vacancy yet!</h6>
+            <h6 className="white-text text-darken-1">No, Company has posted any vacancy yet!</h6>
         </div>))) : (<Loader />)}</div>
     </Fragment>
     );

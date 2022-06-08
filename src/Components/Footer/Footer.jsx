@@ -7,7 +7,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-copyright #e0f7fa black lighten-5">
                     <div className="container center-align">
-                        <h6>BVICAM </h6>
+                        <h6> <a href="http://bvicam.in/">BVICAM </a></h6>
                         <a href="http://bvicam.in/contact-us">Contact Us</a>
                     </div>
                 </div>

@@ -133,7 +133,7 @@ class Request extends Component {
                         </div>
                     </div>
                 </div>) : (null)}
-                {this.state.showDC ? (<div className="container">
+                {this.state.showDC ? (<div className=""><div className="container">
                     <div className="grey-text underline form_a" onClick={this.show}><i className="material-icons">arrow_back</i></div>
                     <div className="row">
                         <div className="col s12 m6 l6 offset-l3">
@@ -170,7 +170,7 @@ class Request extends Component {
                             </div>
                         </div>
                     </div>
-                </div>) : (null)}
+                </div></div>) : (null)}
             </Fragment>) : (<Loader />)}</div>
         );
     }

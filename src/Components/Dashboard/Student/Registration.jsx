@@ -177,8 +177,8 @@ class Registration extends Component {
             return;
         }
         else if (Phone.indexOf(" ") !== -1 || Phone.indexOf("-") !== -1 ||
-            Phone.length < 11 || Phone.length > 11) {
-            this.props.valide("Please enter your 11 digit phone number.")
+            Phone.length < 10 || Phone.length > 10) {
+            this.props.valide("Please enter your 10 digit phone number.")
             return;
         }
         else if (this.state.edit) {
@@ -219,16 +219,16 @@ class Registration extends Component {
             <Fragment>
                 {this.props.currentUser ? (
                     <Fragment>
-                        {this.state.edit ? (null) : (<nav className="nav-wrapper orange darken-4">
+                        {this.state.edit ? (null) : (<nav className="nav-wrapper teal darken-4">
                             <div className="container">
-                                <span className="brand-logo hide-on-small-only">Campus Recruitment System</span>
-                                <span className="hide-on-med-and-up">Campus Recruitment System</span>
+                                <span className="brand-logo hide-on-small-only">Training and Placement</span>
+                                <span className="hide-on-med-and-up">Training and Placement</span>
                             </div>
                         </nav>)}
                         <div className="container">
                             <br />
                             <div className="row">
-                                <div className="orange  col l12 s12 darken-1 white-text center flow-text">
+                                <div className="black  col l12 s12 darken-1 white-text center flow-text">
                                     Student Registration Form
                             </div>
                                 {this.props.errFlag ? (
@@ -270,9 +270,9 @@ class Registration extends Component {
                                 </div>
                                     <div className="col s4 l2 offset-s4 offset-l5 ">
                                         {this.state.edit ? (
-                                            <Button cn="btn-large waves-effect waves-light  orange darken-1" t="Update Request" />
+                                            <Button cn="btn-large waves-effect waves-light  teal lighten-5 " t="Update Request" />
                                         ) : (
-                                            <Button cn="btn-large waves-effect waves-light orange darken-1" t="Register" />)}
+                                            <Button cn="btn-large waves-effect waves-light teal lighten-5" t="Register" />)}
                                     </div>
                                     <br />
                                     <br />

@@ -65,7 +65,7 @@ class Students extends Component {
                         <Department text="Select Department" f="selectD" id="selectD" n="depSelected" v={this.state.depSelected} oc={this.onChange} />
                         {this.state.showSpecificStudents ?
                           (<div className="center">
-                            <button className="btn-small waves-effect waves-light orange darken-1" onClick={this.showAll}>All Students</button>
+                            <button className="btn-small waves-effect waves-light teal darken-4 " onClick={this.showAll}>All Students</button>
                           </div>) : null
                         }
                       </li>
@@ -73,7 +73,7 @@ class Students extends Component {
                         this.props.allStudents.map((stu, index) => {
                           return (
                             <li key={index} className="collection-item avatar">
-                              <i className="btn btn-floating waves-effect waves-light orange material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
+                              <i className="btn btn-floating waves-effect waves-light teal material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
                               <span className="title">{stu.firstName}</span>
                               <p className="grey-text">{stu.dep}</p>
                             </li>)
@@ -85,7 +85,7 @@ class Students extends Component {
                             this.state.selectedDepArray.map((stu, index) => {
                               return (
                                 <li key={index} className="collection-item avatar">
-                                  <i className="btn btn-floating waves-effect waves-light orange material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
+                                  <i className="btn btn-floating waves-effect waves-light teal material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
                                   <span className="title">{stu.firstName}</span>
                                   <p className="grey-text">{stu.dep}</p>
                                 </li>
@@ -112,7 +112,7 @@ class Students extends Component {
                         <Department text="Select Department" f="selectD" id="selectD" n="depSelected" v={this.state.depSelected} oc={this.onChange} />
                         {this.state.showSpecificStudents ?
                           (<div className="center">
-                            <button className="btn-small waves-effect waves-light orange darken-1" onClick={this.showAll}>All Students</button>
+                            <button className="btn-small waves-effect waves-light teal darken-4 " onClick={this.showAll}>All Students</button>
                           </div>) : null
                         }
                       </li>
@@ -120,7 +120,7 @@ class Students extends Component {
                         this.props.unBlockedStudents.map((stu, index) => {
                           return (
                             <li key={index} className="collection-item avatar">
-                              <i className="btn btn-floating waves-effect waves-light orange material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
+                              <i className="btn btn-floating waves-effect waves-light teal material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
                               <span className="title">{stu.firstName}</span>
                               <p className="grey-text">{stu.dep}</p>
                             </li>)
@@ -132,7 +132,7 @@ class Students extends Component {
                             this.state.selectedDepArray.map((stu, index) => {
                               return (
                                 <li key={index} className="collection-item avatar">
-                                  <i className="btn btn-floating waves-effect waves-light orange material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
+                                  <i className="btn btn-floating waves-effect waves-light teal material-icons circle" onClick={() => this.details(stu.id, stu.userId)}>person</i>
                                   <span className="title">{stu.firstName}</span>
                                   <p className="grey-text">{stu.dep}</p>
                                 </li>

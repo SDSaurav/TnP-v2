@@ -175,10 +175,10 @@ class Info extends Component {
         return (
             <Fragment>
                 {this.props.currentUser ? (<Fragment>
-                    {this.state.edit ? (null) : (<nav className="nav-wrapper orange darken-4">
+                    {this.state.edit ? (null) : (<nav className="nav-wrapper teal darken-4">
                         <div className="container">
-                            <span className="brand-logo hide-on-small-only">Campus Recruitment System</span>
-                            <span className="hide-on-med-and-up">Campus Recruitment System</span>
+                            <span className="brand-logo hide-on-small-only">Training and Placement</span>
+                            <span className="hide-on-med-and-up">Training and Placement</span>
                         </div>
                     </nav>)}
                     <div className="container">
@@ -188,8 +188,8 @@ class Info extends Component {
                                 <div className="card">
                                     <form onSubmit={this.whenSubmit}>
                                         <div className="card-content">
-                                            <div className="card-title orange-text text-darken-2 center">
-                                                Company Registration Form
+                                            <div className="card-title white-text text-darken-2 center">
+                                                Training and Placement
                                         </div>
                                             {this.props.errorFlag ? (<div className="center grey lighten-3 red-text"><h6>{this.props.errorMessageC} </h6></div>) : (null)}
                                             {this.state.edit ? (null) : <InputS edit={this.state.edit} t="text" l="Comapny Name" n="CompanyName" v={this.state.CompanyName} oc={this.whenChange} d="cname" f="cname" />}
@@ -198,9 +198,9 @@ class Info extends Component {
                                             <InputS edit={this.state.edit} t="number" l='Contact Number' n="ContactNumber" v={this.state.ContactNumber} oc={this.whenChange} d="cn" f="cn" />
                                             <div className="card-action">
                                                 {this.state.edit ? (
-                                                    <Button cn="btn-large waves-effect waves-light  orange darken-1" t="Update Request" />
+                                                    <Button cn="btn-large waves-effect waves-light  teal darken-4" t="Update Request" />
                                                 ) : (
-                                                    <Button cn="btn-large waves-effect waves-light orange darken-1" t="Register" />)}
+                                                    <Button cn="btn-large waves-effect waves-light teal darken-4" t="Register" />)}
                                             </div>
                                         </div>
                                     </form>

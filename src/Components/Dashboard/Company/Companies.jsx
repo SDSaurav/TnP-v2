@@ -19,7 +19,7 @@ const Companies = (props) => {
                             return (
                                 <li key={com.companyID} className="collection-item myCollections">
                                     <span className="title">{com.cname}</span>
-                                    <span className="btn-floating waves-effect waves-light btn-small orange secondary-content" onClick={() => details(com.userId)}>
+                                    <span className="btn-floating waves-effect waves-light btn-small teal secondary-content" onClick={() => details(com.userId)}>
                                         <i className="material-icons white-text text-darken-3">info</i>
                                     </span>
                                 </li>
@@ -33,7 +33,7 @@ const Companies = (props) => {
                                 return (
                                     <li key={com.companyID} className="collection-item myCollections">
                                         <span className="title">{com.cname}</span>
-                                        <span className="btn-floating waves-effect waves-light btn-small orange secondary-content" onClick={() => details(com.userId)}>
+                                        <span className="btn-floating waves-effect waves-light btn-small teal secondary-content" onClick={() => details(com.userId)}>
                                             <i className="material-icons white-text text-darken-3">info</i>
                                         </span>
                                     </li>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 const SignInLinks = (props) => {
     const char = props.email.slice(0, 1)
-    return (
+    return (<div className="total">
         <ul className="right">
             {props.status === "Admin" ? (<li>
                 <NavLink to="/">Requests</NavLink>
@@ -30,9 +30,10 @@ const SignInLinks = (props) => {
                 <NavLink to="/SignOut">Sign Out</NavLink>
             </li>
             {props.status === "Company" || props.status === "Student" ? (<li>
-                <NavLink to="/Profile" className='btn btn-floating orange darken-3'>{char}</NavLink>
+                <NavLink to="/Profile" className='btn btn-floating teal darken-4'>{char}</NavLink>
             </li>) : (null)}
         </ul>
+    </div>
     );
 }
 const mapStateToProps = (state) => {
